@@ -1,5 +1,7 @@
 # Chasia — Achievements Website
 
+Live site: https://kopipes.github.io/chasia/
+
 A static website (plain HTML/CSS/JS, no build step) showing Chasia Pulungan’s achievements and activities.
 
 - `index.html`: home page with hero, highlights, areas, a searchable and filterable achievements grid, a year-by-year journey, and contact
