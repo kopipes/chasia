@@ -1,6 +1,6 @@
 # Chasia — Achievements Website
 
-Live site: https://kopipes.github.io/chasia/
+Live site: https://chasia.my.id/
 
 A static website (plain HTML/CSS/JS, no build step) showing Chasia Pulungan’s achievements and activities.
 
@@ -40,4 +40,4 @@ python3 -m http.server 8000
 Then open http://localhost:8000.
 
 ## Publishing
-The site works on any static host (GitHub Pages, Netlify, Vercel). For GitHub Pages: Settings → Pages → deploy from this branch, root folder.
+Hosted on GitHub Pages (branch `main`, root folder) with the custom domain in `CNAME`. DNS for chasia.my.id: four A records pointing to 185.199.108.153, 185.199.109.153, 185.199.110.153 and 185.199.111.153.
