@@ -1,40 +1,41 @@
 (function () {
-  const { icon, esc, catById, activityUrl, areaUrl, coverArt, activityCard, renderHeader, renderFooter, reveal } = window.UI;
-  const ACTS = window.ACTIVITIES, CATS = window.CATEGORIES, S = window.SITE;
+  const { icon, esc, sectionById, groupOf, activityUrl, sectionUrl, itemsOf, gname, coverArt, activityCard, renderHeader, renderFooter, reveal } = window.UI;
+  const ACTS = window.ACTIVITIES, SECS = window.SECTIONS, S = window.SITE;
   const main = document.getElementById("main");
-
-  renderHeader("activity");
-  renderFooter();
 
   const id = new URLSearchParams(location.search).get("id");
   const a = ACTS.find((x) => x.id === id);
+
+  renderHeader(a ? a.section : "");
+  renderFooter();
 
   if (!a) {
     document.title = `Not found — ${S.name}`;
     document.body.classList.remove("page-activity");
     main.innerHTML = `<section class="notfound container">
       <p class="kicker">404</p><h1 class="h2">This page <em>doesn’t exist</em>.</h1>
-      <p>The activity may have been moved or renamed.</p>
-      <a class="btn btn--ink" href="index.html#achievements">${icon("arrowLeft")} Back to all achievements</a>
+      <p>The page may have been moved or renamed.</p>
+      <a class="btn btn--ink" href="index.html#all">${icon("arrowLeft")} See all pages</a>
     </section>`;
     return;
   }
 
-  const c = catById(a.cat);
+  const c = sectionById(a.section), g = groupOf(a);
   document.title = `${a.title.replace(/[“”]/g, "")} — ${S.name}`;
   document.querySelector('meta[name="description"]').setAttribute("content", a.summary);
 
   /* ---------- Gallery data (real or placeholder) ---------- */
   const isPlaceholder = !a.gallery || a.gallery.length === 0;
   const gallery = isPlaceholder ? makePlaceholders(c) : a.gallery;
-  const nPhotos = gallery.filter((g) => g.type === "image").length;
+  const nPhotos = gallery.filter((x) => x.type === "image").length;
   const nVideos = gallery.length - nPhotos;
 
-  /* ---------- Sibling navigation ---------- */
-  const inCat = ACTS.filter((x) => x.cat === a.cat).sort((x, y) => y.year - x.year);
-  const idx = inCat.indexOf(a);
-  const prev = inCat[idx - 1], next = inCat[idx + 1];
-  const more = inCat.filter((x) => x !== a).slice(0, 3);
+  /* ---------- Sibling navigation (sitemap order) ---------- */
+  const inSec = itemsOf(a.section);
+  const idx = inSec.indexOf(a);
+  const prev = inSec[idx - 1], next = inSec[idx + 1];
+  const sameGroup = itemsOf(a.section, a.group).filter((x) => x !== a);
+  const more = (sameGroup.length ? sameGroup : inSec.filter((x) => x !== a)).slice(0, 3);
 
   const facts = [
     ["calendar", "Period", a.period],
@@ -50,19 +51,20 @@
       <div class="a-hero__copy">
         <nav class="crumbs" aria-label="Breadcrumb">
           <a href="index.html">Home</a><span>/</span>
-          <a href="${areaUrl(c.id)}">${esc(c.name)}</a><span>/</span>
+          <a href="${sectionUrl(c.id)}">${esc(c.name)}</a><span>/</span>
+          <a href="${sectionUrl(c.id, g.id)}">${esc(gname(g))}</a><span>/</span>
           <span aria-current="page">${esc(a.title)}</span>
         </nav>
-        <p class="a-hero__cat">${icon(c.icon)} ${esc(c.name)}</p>
+        <p class="a-hero__cat">${icon(g.icon)} ${esc(c.short)} · ${esc(gname(g))}</p>
         <h1 class="a-hero__title">${esc(a.title)}</h1>
         <p class="a-hero__lead">${esc(a.summary)}</p>
         <div class="a-hero__meta">
-          <span class="pill">${icon("calendar")}${esc(a.period)}</span>
+          ${a.period ? `<span class="pill">${icon("calendar")}${esc(a.period)}</span>` : ""}
           ${a.location ? `<span class="pill">${icon("pin")}${esc(a.location)}</span>` : ""}
           ${(a.badges || []).map((b) => `<span class="pill pill--solid">${icon("award")}${esc(b)}</span>`).join("")}
         </div>
         <div class="a-hero__jump">
-          <a class="btn btn--light btn--sm" href="#gallery">${icon("image")} View gallery <span class="count">${gallery.length}</span></a>
+          <a class="btn btn--light btn--sm" href="#gallery">${icon("image")} View gallery <span class="count">${isPlaceholder ? 0 : gallery.length}</span></a>
         </div>
       </div>
       <div class="a-hero__visual">
@@ -77,25 +79,36 @@
       <article class="story">
         <p class="kicker reveal">The story</p>
         ${a.description.map((p, i) => `<p class="${i === 0 ? "story__first" : ""} reveal">${esc(p)}</p>`).join("")}
+        ${a.needsInfo ? `<p class="notice notice--soft reveal">${icon("info")} More details about this page are coming soon.</p>` : ""}
 
         ${a.highlights && a.highlights.length ? `
         <h2 class="h3 reveal">Highlights</h2>
         <ul class="ticks">${a.highlights.map((h) => `<li class="reveal" style="--c1:${c.c1};--c2:${c.c2}">${icon("check")}<span>${esc(h)}</span></li>`).join("")}</ul>` : ""}
 
+        ${a.list && a.list.length ? `
+        <h2 class="h3 reveal">${a.group === "travel" ? "Destinations" : a.group === "cooking" ? "Classes" : a.group === "parks" ? "Parks" : "List"}</h2>
+        <ul class="tags">${a.list.map((l) => `<li class="reveal" style="--c1:${c.c1};--c2:${c.c2}">${icon(g.icon)}<span><strong>${esc(l.title)}</strong>${l.text ? `<small>${esc(l.text)}</small>` : ""}</span></li>`).join("")}</ul>` : ""}
+
         ${a.timeline ? `
         <h2 class="h3 reveal">Over the years</h2>
         <ol class="mini-tl">${a.timeline.map((t) => `<li class="reveal" style="--c1:${c.c1};--c2:${c.c2}"><span class="mini-tl__when">${esc(t.period)}</span><p>${esc(t.text)}</p></li>`).join("")}</ol>` : ""}
+
+        ${a.links && a.links.length ? `
+        <h2 class="h3 reveal">Links</h2>
+        <div class="links">${a.links.map((l) => `<a class="linkcard reveal" href="${esc(l.url)}" target="_blank" rel="noopener" style="--c1:${c.c1};--c2:${c.c2}">
+          <span class="linkcard__icon">${icon("external")}</span><span><strong>${esc(l.label)}</strong><small>${esc(l.url.replace(/^https?:\/\/(www\.)?/, "").split("/")[0])}</small></span>${icon("arrowUpRight")}</a>`).join("")}</div>` : ""}
       </article>
 
       <aside class="aside">
         <div class="factcard reveal" style="--c1:${c.c1};--c2:${c.c2}">
           <h2 class="factcard__title">At a glance</h2>
           <dl>${facts.map(([i, k, v]) => `<div><dt>${icon(i)}${k}</dt><dd>${esc(v)}</dd></div>`).join("")}
-            <div><dt>${icon(c.icon)}Area</dt><dd><a href="${areaUrl(c.id)}">${esc(c.name)}</a></dd></div>
+            <div><dt>${icon(c.icon)}Section</dt><dd><a href="${sectionUrl(c.id)}">${c.num} ${esc(c.name)}</a></dd></div>
+            <div><dt>${icon(g.icon)}Sub-section</dt><dd><a href="${sectionUrl(c.id, g.id)}">${g.num} ${esc(g.name)}</a></dd></div>
           </dl>
           <div class="factcard__actions">
             <button class="btn btn--ghost btn--sm" data-share>${icon("share")} <span>Share</span></button>
-            <a class="btn btn--ghost btn--sm" href="${areaUrl(c.id)}">${icon("arrowLeft")} All ${esc(c.short)}</a>
+            <a class="btn btn--ghost btn--sm" href="${sectionUrl(c.id, g.id)}">${icon("arrowLeft")} ${esc(gname(g))}</a>
           </div>
         </div>
       </aside>
@@ -115,7 +128,7 @@
           <button class="tab" data-g="video" role="tab" aria-selected="false">${icon("film")} Videos <span>${nVideos}</span></button>
         </div>
       </div>
-      ${isPlaceholder ? `<p class="notice reveal">${icon("sparkle")} Photos and videos for this activity are coming soon — the tiles below are previews.</p>` : ""}
+      ${isPlaceholder ? `<p class="notice reveal">${icon("sparkle")} Photos and videos for this page are coming soon — the tiles below are previews.</p>` : ""}
       <div class="masonry" data-gallery></div>
     </div>
   </section>
@@ -123,18 +136,18 @@
   <section class="section more">
     <div class="container">
       <div class="pager reveal">
-        ${prev ? `<a class="pager__link" href="${activityUrl(prev)}"><small>${icon("arrowLeft")} Previous</small><strong>${esc(prev.title)}</strong></a>` : `<span></span>`}
-        ${next ? `<a class="pager__link pager__link--next" href="${activityUrl(next)}"><small>Next ${icon("arrow")}</small><strong>${esc(next.title)}</strong></a>` : `<span></span>`}
+        ${prev ? `<a class="pager__link" href="${activityUrl(prev)}"><small>${icon("arrowLeft")} Previous</small><strong>${esc(prev.title)}</strong></a>` : `<a class="pager__link" href="${sectionUrl(c.id)}"><small>${icon("arrowLeft")} ${c.num}</small><strong>${esc(c.name)} overview</strong></a>`}
+        ${next ? `<a class="pager__link pager__link--next" href="${activityUrl(next)}"><small>Next ${icon("arrow")}</small><strong>${esc(next.title)}</strong></a>` : `<a class="pager__link pager__link--next" href="${sectionUrl(c.id)}"><small>${c.num} ${icon("arrow")}</small><strong>${esc(c.name)} overview</strong></a>`}
       </div>
       ${more.length ? `
       <div class="section__head">
-        <div><p class="kicker reveal">Keep exploring</p><h2 class="h2 reveal">More in <em>${esc(c.name)}</em></h2></div>
-        <a class="link-arrow reveal" href="${areaUrl(c.id)}">See all ${icon("arrow")}</a>
+        <div><p class="kicker reveal">Keep exploring</p><h2 class="h2 reveal">More in <em>${esc(sameGroup.length ? gname(g) : c.name)}</em></h2></div>
+        <a class="link-arrow reveal" href="${sectionUrl(c.id, sameGroup.length ? g.id : "")}">See all ${icon("arrow")}</a>
       </div>
       <div class="grid grid--3">${more.map((m) => activityCard(m)).join("")}</div>` : ""}
       <div class="other-areas reveal">
-        <p>Other areas</p>
-        <div>${CATS.filter((x) => x.id !== c.id).map((x) => `<a class="chip chip--area" href="${areaUrl(x.id)}" style="--c1:${x.c1};--c2:${x.c2}">${icon(x.icon)}${esc(x.name)}</a>`).join("")}</div>
+        <p>Other sections</p>
+        <div>${SECS.filter((x) => x.id !== c.id).map((x) => `<a class="chip chip--area" href="${sectionUrl(x.id)}" style="--c1:${x.c1};--c2:${x.c2}">${icon(x.icon)}${esc(x.name)}</a>`).join("")}</div>
       </div>
     </div>
   </section>`;
@@ -150,7 +163,7 @@
   }
 
   function renderGallery(filter) {
-    visible = filter === "all" ? gallery : gallery.filter((g) => (filter === "image" ? g.type === "image" : g.type !== "image"));
+    visible = filter === "all" ? gallery : gallery.filter((x) => (filter === "image" ? x.type === "image" : x.type !== "image"));
     gEl.innerHTML = visible.length
       ? visible.map((g, i) => {
           const isVid = g.type !== "image";
