@@ -151,7 +151,7 @@ Pages that would also benefit from one or two more facts (date, place or result)
 | 5.4 | Cinema | Movie posters | – | ⏳ List of recent watches |
 | 5.5 | Amusement Parks | Photos | – | Universal Studios Singapore ✅, Southbay Shore water park ✅ · others ⏳ |
 
-**Count:** 34 pages have at least some files uploaded. 22 pages are still waiting for media. 10 videos still need to be edited.
+**Count:** 35 of the 56 pages already have files uploaded (plus the 2 debate videos). 21 pages are still waiting for media. 7 videos still need to be made or edited.
 
 ---
 
