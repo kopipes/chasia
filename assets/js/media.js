@@ -1127,6 +1127,14 @@ window.MEDIA = {
    "thumb": "assets/media/amusement-parks/06-t.jpg",
    "caption": ""
   }
+ ],
+ "fintech-camp": [
+  {
+   "src": "assets/media/fintech-camp/01.jpg",
+   "thumb": "assets/media/fintech-camp/01-t.jpg",
+   "caption": "Certificate of Completion — SPH Lippo Village Summer Program 2025",
+   "doc": true
+  }
  ]
 };
 

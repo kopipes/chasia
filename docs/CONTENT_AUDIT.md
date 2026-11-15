@@ -207,8 +207,9 @@ For each page, put the files in `assets/media/<page-id>/` and list them in that 
 - **PDFs** (report cards, certificates, letters, writing samples) are shown as page images in the gallery, up to 6 pages per file.
 - **Videos (.MOV/.mp4) are not imported yet.** They will go on YouTube later (decision 17).
 - The generated list is in `assets/js/media.js`. The first photo of each page becomes its card and header image.
-- **Not placed (unclear which page):**
-  - `03 Debate / Chasia Debate 03.HEIC` (loose in the Debate folder)
-  - `06 Entrepreneurship & Investment / PHOTO-2026-11-11-08-11-42.jpg` (club or fintech camp?)
+- **Placed after review:** `06 Entrepreneurship & Investment / PHOTO-2026-11-11-08-11-42.jpg` is the FinTech Camp certificate (“SPH Summer — SpeakUp Camp: Financial Technology for Young Moguls”, SPH **Lippo Village** Summer Program 2025). It is now on the FinTech Camp page, and the location is corrected from Jakarta to Lippo Village, Tangerang.
+- **Not placed:** `03 Debate / Chasia Debate 03.HEIC` shows a debate preparation session with no clue to the year. Move it into one of the WSC year folders to place it.
+- **Portrait (temporary):** the official school photo from the Vice Captain folder (`assets/img/portrait.jpg`). Replace it when the chosen portrait is ready (decision 19).
+- **Facts confirmed by the documents and added to the pages:** Cambridge Checkpoint, May 2025, “Outstanding (50/50)” in English, Mathematics and Science. Head of Events and Projects Feb – Dec 2024. School Vice-Captain Aug – Dec 2024. Grade 5 Top Student award given at the Primary Academic Awards Presentation, 27 Aug 2024. Vice School Captain message published in the primary yearbook.
 - The WSC qualification letter (11 Sept 2024) refers to the Global Round in 2024 and the Tournament of Champions at Yale in November 2024. This confirms decision 2.
 - Some documents and photos show other students' names and faces (WSC team letter, team photos). Decision 14 says to get their families' permission.
