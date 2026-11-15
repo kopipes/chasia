@@ -34,7 +34,7 @@ window.SITE = {
     "Thank you for visiting — I hope you find something here that makes you smile.",
   ],
   // Put a photo at assets/img/portrait.jpg and set: portrait: "assets/img/portrait.jpg"
-  portrait: "",
+  portrait: "assets/img/portrait.jpg",
   // MAIN PAGE — Video? : e.g. reel: "assets/media/reel/chasia-reel.mp4"  (or a YouTube id: reelYoutube: "…")
   reel: "",
   reelYoutube: "",
@@ -186,10 +186,10 @@ window.ACTIVITIES = [
     summary: "A perfect 50 out of 50 in all three subjects, with Gold for Global Perspectives.",
     description: [
       "The Cambridge Primary Checkpoint is an international assessment taken at the end of primary school by students in Cambridge schools around the world. It assesses English, Mathematics and Science, and gives schools and families an external benchmark of how a student compares internationally.",
-      "Chasia scored a perfect 50/50 in all three subjects. She was also awarded Gold for Global Perspectives, the subject in which she was named Top Student that same year.",
+      "In May 2025 Chasia scored a perfect 50/50 — rated “Outstanding” — in all three subjects: English, Mathematics and Science. She was also awarded Gold for Global Perspectives, the subject in which she was named Top Student that same year.",
       "Her results, certificates and photos — along with the school’s Instagram post celebrating the result — are below.",
     ],
-    highlights: ["50/50 on all 3 subjects", "Gold for Global Perspectives"],
+    highlights: ["English: Outstanding (50/50)", "Mathematics: Outstanding (50/50)", "Science: Outstanding (50/50)", "Gold for Global Perspectives"],
     badges: ["Perfect Score", "Gold"],
     links: [{ label: "View the post on Instagram", url: "https://www.instagram.com/p/DMrqszVzM7r/" }],
     gallery: [],
@@ -224,7 +224,7 @@ window.ACTIVITIES = [
     summary: "Top Student of Grade 5, in the top 10% of more than 70 students.",
     description: [
       "In Grade 5 Chasia was named one of the Top Students of the grade — in the top 10% of more than 70 students.",
-      "It was the first of two consecutive Top Student awards.",
+      "She received the Academic Achievement Award (Grade V, Top Student) at the Primary Academic Awards Presentation on 27 August 2024 — the first of two consecutive Top Student awards.",
     ],
     highlights: ["Top 10% of 70+ students"],
     badges: ["Top Student"],
@@ -407,11 +407,11 @@ window.ACTIVITIES = [
   },
   {
     id: "fintech-camp", num: "1.6.2", section: "academics", group: "entrepreneurship",
-    title: "Financial Technology Camp", org: "Sekolah Pelita Harapan", location: "Jakarta, Indonesia", period: "2025", year: 2025,
+    title: "Financial Technology Camp", org: "Sekolah Pelita Harapan Lippo Village · SpeakUp Academy", location: "Lippo Village, Tangerang", period: "2025", year: 2025,
     summary: "“Financial Technology for Young Moguls” — two weeks of fintech and entrepreneurship, ending with a team investment pitch.",
     description: [
-      "Chasia completed “Financial Technology for Young Moguls”, a two-week summer camp at Sekolah Pelita Harapan for students aged 9 to 16. The programme focused on how technology is used in business, digital finance and entrepreneurship.",
-      "Working in a team of five, she helped develop a business plan and presented it as an Investment Pitch at the end of the camp. Her certificate is below.",
+      "Chasia completed “SpeakUp Camp: Financial Technology for Young Moguls”, a two-week camp in the Sekolah Pelita Harapan (SPH) Lippo Village Summer Program 2025, run with SpeakUp Academy for students aged 9 to 16. The programme focused on how technology is used in business, digital finance and entrepreneurship.",
+      "Working in a team of five, she helped develop a business plan and presented it as an Investment Pitch at the end of the camp, and received a Certificate of Completion.",
     ],
     highlights: ["Two-week summer camp", "Technology, digital finance and entrepreneurship", "5-member team Investment Pitch"],
     gallery: [],
@@ -421,25 +421,25 @@ window.ACTIVITIES = [
   /* ---- 2.1 School ---- */
   {
     id: "vice-captain", num: "2.1.1", section: "service", group: "school",
-    title: "Student Government: Primary School Vice Captain", org: "Primary Student Council · ACS Jakarta", period: "2024", year: 2024,
+    title: "Student Government: Primary School Vice Captain", org: "Primary Student Council · ACS Jakarta", period: "Aug – Dec 2024", year: 2024,
     role: "Elected Vice Captain", badges: ["Elected"],
     summary: "Campaigned for School Captain and was elected Vice Captain — stepping in to lead whenever the Captain was away.",
     description: [
       "Chasia ran for School Captain of the primary school, preparing a campaign and speaking to students about what she would do in the role. She was elected School Vice Captain.",
       "As Vice Captain she took on the Captain’s responsibilities whenever the School Captain was absent — delivering public addresses at school events and making announcements to the whole primary school.",
-      "Photos, the school publication, her certificate and campaign poster are below.",
+      "Her farewell message as Vice School Captain was published in the primary school yearbook, and her service was recognised with a Certificate of Recognition from ACS Jakarta.",
     ],
-    highlights: ["Campaigned for School Captain", "Elected School Vice Captain", "Delivered public addresses and announcements"],
+    highlights: ["Campaigned for School Captain", "Elected School Vice Captain (Aug – Dec 2024)", "Delivered public addresses and announcements", "Message published in the primary yearbook"],
     gallery: [],
   },
   {
     id: "head-of-events", num: "2.1.2", section: "service", group: "school",
-    title: "Student Government: Head of Events and Projects", org: "Primary Student Council · ACS Jakarta", period: "2024", year: 2024,
+    title: "Student Government: Head of Events and Projects", org: "Primary Student Council · ACS Jakarta", period: "Feb – Dec 2024", year: 2024,
     summary: "Planned and organised school events and special activity days with the Student Council.",
     description: [
       "As Head of Events and Projects, Chasia worked with the Primary Student Council Committee to plan and organise school events and special activity days — from the first idea to the day itself.",
     ],
-    highlights: ["Planned school events and special activity days", "Worked with the Primary Student Council Committee"],
+    highlights: ["Planned school events and special activity days", "Worked with the Primary Student Council Committee", "Certificate of Recognition from ACS Jakarta"],
     gallery: [],
   },
   {
