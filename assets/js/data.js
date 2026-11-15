@@ -754,7 +754,7 @@ window.ACTIVITIES = [
     ],
     list: [
       { title: "Saudi Arabia", text: "" }, { title: "Türkiye", text: "" }, { title: "Egypt", text: "" }, { title: "Australia", text: "" },
-      { title: "Singapore", text: "" }, { title: "Thailand", text: "" }, { title: "United States — California & Hawaii", text: "" },
+      { title: "Singapore", text: "" }, { title: "Thailand", text: "" }, { title: "United States — California, Hawaii & New York", text: "" },
     ],
     gallery: [],
   },
