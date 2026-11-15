@@ -27,7 +27,7 @@
   $("[data-stats]").innerHTML = [
     ["50/50", "Perfect Cambridge Primary Checkpoint score"],
     ["1st", "Overall Team — WSC Global Round, Bangkok"],
-    ["Top", "Student of 70+, in Grade 5 and Grade 6"],
+    ["Top 10%", "Top Student of 70+, in Grade 5 and Grade 6"],
     [String(ACTS.length), "Pages across 5 sections"],
   ].map(([v, l]) => `<div class="stat reveal"><span class="stat__value">${v}</span><span class="stat__label">${l}</span></div>`).join("");
 
@@ -53,15 +53,15 @@
     </a>`;
   }).join("");
 
-  /* ---------- Featured bento ---------- */
-  $("[data-featured]").innerHTML = ACTS.filter((a) => a.featured).slice(0, 6).map((a, i) => {
-    const s = sectionById(a.section), g = groupOf(a);
-    return `<a class="feat feat--${i} reveal" href="${activityUrl(a)}" style="--c1:${s.c1};--c2:${s.c2}">
+  /* ---------- Highlights (SITE.highlights) ---------- */
+  $("[data-featured]").innerHTML = (S.highlights || []).slice(0, 6).map((h, i) => {
+    const s = sectionById(h.section);
+    return `<a class="feat feat--${i} reveal" href="${esc(h.href)}" style="--c1:${s.c1};--c2:${s.c2}">
       <span class="feat__glow" aria-hidden="true"></span>
-      <span class="feat__icon">${icon(g.icon)}</span>
-      <span class="feat__cat">${esc(s.name)} · ${esc(gname(g))}</span>
-      ${a.stat ? `<span class="feat__stat">${esc(a.stat.value)}<small>${esc(a.stat.label)}</small></span>` : ""}
-      <span class="feat__title">${esc(a.title)}</span>
+      <span class="feat__icon">${icon(h.icon)}</span>
+      <span class="feat__cat">${esc(h.label)}</span>
+      ${h.stat ? `<span class="feat__stat">${esc(h.stat)}<small>${esc(h.statLabel)}</small></span>` : ""}
+      <span class="feat__title">${esc(h.title)}</span>
       <span class="feat__go">${icon("arrowUpRight")}</span>
     </a>`;
   }).join("");

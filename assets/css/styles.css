@@ -636,3 +636,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .linkcard strong { display: block; }
 .linkcard small { color: var(--ink-3); font-size: 13.5px; }
 .linkcard > .i:last-child { margin-left: auto; color: var(--ink-3); }
+
+/* highlight cards: keep the corner icon clear of the text */
+.feat { padding-top: 96px; }
+.feat__stat { font-size: clamp(52px, 6vw, 84px); }

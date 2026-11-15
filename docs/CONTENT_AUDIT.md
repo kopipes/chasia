@@ -8,6 +8,34 @@ Branch: `claude/sitemap-v2`
 
 ---
 
+## 0. Decisions (from the shared decision sheet, 15 Nov 2026)
+
+| # | Decision | Applied on the site |
+|---|---|---|
+| 1 | Top Student = **top 10%** of 70+ students | Grade 5/6 pages, Academics intro, home stat |
+| 2 | WSC Global Round Bangkok = **2024** | Page title “2024 Global Round, Bangkok”, period 2024 |
+| 3 | “Arab” = **Saudi Arabia** | Travel — International |
+| 4 | Final sheet = **“to OmBob”** | Used as the source |
+| 5 | Student Councillor: **removed** (follow the sitemap) | Mention removed from 2.1.2 |
+| 6 | Private football coaching: **mentioned in related pages**. Football order: ACS → 3F → Private → TFS | Soccer intro, Athletics intro, ACS Football page |
+| 7 | Drink stirrers: **mentioned in related page** | 4.2 Keychains and Figurines |
+| 8 | Fast Fashion stays in **Academics** | Unchanged |
+| 9 | Interests: **one page per topic** | Unchanged |
+| 10 | 2.4 renamed **“Islamic Giving”** | Menu, section page, breadcrumbs |
+| 11 | Home highlights: **Top Student · Debate Champion · Environment Advocate (Fast Fashion) · Soccer Player · Art Works (Painting & Pottery) · Traveller** | `SITE.highlights` in `data.js` |
+| 12 | Report cards shown **in full**. The website address is shared only with admission committees | All pages have `noindex, nofollow` so search engines don't list the site |
+| 13 | Certificates: **no blurring** | — |
+| 14 | Other children in photos: **ask their families' permission** | To do when adding photos |
+| 15 | Contact: **parent's email**, *to be confirmed* | Not changed yet. Waiting for the address |
+| 16 | Home video: **the 60-second motion-graphic video** | Waiting for the YouTube ID. Set `SITE.reelYoutube` |
+| 17 | Videos stored on **YouTube** | Galleries support `{ type: "youtube", id }` |
+| 18 | Paskibra video uses an **instrumental** version | To do when the video is made |
+| 19 | Portrait photo: **will be provided** | Waiting. Set `SITE.portrait` |
+| 20 | Instagram as **links** | Unchanged |
+| 21 | Launch the sitemap version **now**, content follows | Merged to `main` |
+
+---
+
 ## 1. How the sitemap maps to the website
 
 | Sitemap | Website |
@@ -53,10 +81,10 @@ Branch: `claude/sitemap-v2`
 
 | # | Topic | Sitemap says | Achievement list says | What the site does / to confirm |
 |---|---|---|---|---|
-| 1 | Grade 5 & 6 Top Student | “Top Student (**Top 10%**; of 70+ students)” | “Top Student (of 70+ students)” | Site says “Top 10% of 70+”. **Confirm**: was she *the* top student (rank 1) or one of the top 10%? Home page stat currently says “Top Student of 70+”. |
-| 2 | WSC years | “2025 Regional”, “**2024 Global**, Bangkok”, “2024 Regional”, “2023 Regional” | Global Bangkok is under **2024–2025** | The Global Round normally comes *after* the regional round of the same season. If the 2024 Regional was in late 2024, Bangkok Global was probably in **2025**. **Confirm the year** before publishing it in titles (the site currently shows “2024 – 2025”). |
+| 1 | Grade 5 & 6 Top Student | “Top Student (**Top 10%**; of 70+ students)” | “Top Student (of 70+ students)” | ✅ Decided: top 10%. |
+| 2 | WSC years | “2025 Regional”, “**2024 Global**, Bangkok”, “2024 Regional”, “2023 Regional” | Global Bangkok is under **2024–2025** | The Global Round normally comes *after* the regional round of the same season. If the 2024 Regional was in late 2024, Bangkok Global was probably in **2025**. ✅ Decided: 2024. |
 | 3 | WSC 2023 | “2023 WSC Regional, Jakarta” | Skittles Division, 2023–2024 | Site title includes “Skittles Division”. |
-| 4 | Student Councillor (2023) | **missing** | listed | Mentioned inside 2.1.2 Head of Events and Projects. Add a 2.1.x page if wanted. |
+| 4 | Student Councillor (2023) | **missing** | listed | ✅ Decided: removed. |
 | 5 | Football private coaching | **missing** | listed under Athletics | Mentioned inside 3.1 ACS Football Girls. |
 | 6 | Pottery drink stirrers | **missing** | listed | Mentioned inside 4.2 Keychains and Figurines. |
 | 7 | Pottery “figurines” | grouped with keychains (Present) | animal figurines are **2024–2025** | Page period set to “2024 – Present”. |
@@ -83,7 +111,7 @@ Each of these pages shows a small “More details about this page are coming soo
 | 5.4 Cinema | List of recent films (+ posters). |
 
 Pages that would also benefit from one or two more facts (date, place or result):
-1.6.1 (which competition results?), 2.2.1 (date of the event), 2.3.x (name of the care home, if it can be published), 3.x (any matches or tournaments), 4.3 Batik (where she learned it), 5.1 (which places in “Arab region”: Saudi Arabia, UAE, …?).
+1.6.1 (which competition results?), 2.2.1 (date of the event), 2.3.x (name of the care home, if it can be published), 3.x (any matches or tournaments), 4.3 Batik (where she learned it), 5.1 (which cities/places in each country).
 
 ---
 

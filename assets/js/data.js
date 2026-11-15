@@ -38,6 +38,15 @@ window.SITE = {
   // MAIN PAGE — Video? : e.g. reel: "assets/media/reel/chasia-reel.mp4"  (or a YouTube id: reelYoutube: "…")
   reel: "",
   reelYoutube: "",
+  // HOME — six highlight cards (in this order)
+  highlights: [
+    { title: "Top Student", label: "Academics · Awards", stat: "Top 10%", statLabel: "of 70+ students, two years running", section: "academics", icon: "award", href: "section.html?s=academics#awards" },
+    { title: "Debate Champion", label: "World Scholar’s Cup", stat: "1st", statLabel: "Overall Team, 2024 Global Round, Bangkok", section: "academics", icon: "mic", href: "activity.html?id=wsc-2024-global" },
+    { title: "Environment Advocate — Ethics of Fast Fashion", label: "Academics · Environment", stat: "4", statLabel: "steps: seminar → donations → video → recognition", section: "academics", icon: "leaf", href: "section.html?s=academics#fast-fashion" },
+    { title: "Soccer Player", label: "Athletics · Soccer", stat: "4", statLabel: "ways she trains: ACS · 3F · private · TFS", section: "athletics", icon: "ball", href: "section.html?s=athletics#soccer" },
+    { title: "Art Works — Painting & Pottery", label: "Arts & Music", stat: "", statLabel: "", section: "arts", icon: "palette", href: "section.html?s=arts#painting" },
+    { title: "Traveller", label: "Interests · Travel & Nature", stat: "7", statLabel: "countries abroad, and across Indonesia", section: "interests", icon: "globe", href: "section.html?s=interests#travel" },
+  ],
   email: "chasia.pulungan@gmail.com",
   location: "Jakarta, Indonesia",
   school: "ACS Jakarta",
@@ -49,7 +58,7 @@ window.SECTIONS = [
     id: "academics", num: "1.0", name: "Academics", short: "Academics", icon: "cap", c1: "#2B44C9", c2: "#6F8DFF",
     tagline: "Learning that goes beyond the classroom.",
     intro: [
-      "Chasia has been named Top Student of her grade twice, earned a perfect score on the Cambridge Primary Checkpoint, and carried consistent A* and A grades into secondary school.",
+      "Chasia has been recognised as a Top Student — in the top 10% of her grade — two years running, earned a perfect score on the Cambridge Primary Checkpoint, and carried consistent A* and A grades into secondary school.",
       "Her academic life doesn’t stop at the report card. She has debated and written her way to the World Scholar’s Cup Global Round, turned a Global Perspectives project on fast fashion into a real campaign, and explored business and investing through clubs, competitions and a fintech camp.",
     ],
     groups: [
@@ -72,18 +81,18 @@ window.SECTIONS = [
       { id: "school", num: "2.1", name: "School", icon: "flag", intro: "Student government and ceremonial leadership." },
       { id: "environment", num: "2.2", name: "Environment", icon: "leaf", intro: "Practical action for a cleaner neighbourhood and a greener economy." },
       { id: "elderly", num: "2.3", name: "Elderly Care Home", icon: "users", intro: "Three years of visits — from companionship to teaching technology." },
-      { id: "islam", num: "2.4", name: "Islam", icon: "moon", intro: "Faith-based giving: Ramadhan and Friday blessings." },
+      { id: "islam", num: "2.4", name: "Islamic Giving", icon: "moon", intro: "Faith-based giving: Ramadhan and Friday blessings." },
     ],
   },
   {
     id: "athletics", num: "3.0", name: "Athletics", short: "Athletics", icon: "ball", c1: "#0B7F57", c2: "#3CC38C",
     tagline: "Training, teamwork and a lot of football.",
     intro: [
-      "Football is Chasia’s main sport. She plays for the ACS Secondary Girls team, trains on weekends with an academy under the French Football Federation, and previously trained at a school inspired by Dutch Total Football — with one-on-one coaching in between.",
+      "Football is Chasia’s main sport, and she trains it four ways: with the ACS Secondary Girls team, on weekends at the French Football Academy (3F) under the French Football Federation, in weekly private coaching, and — before that — at Total Football School (TFS), inspired by Dutch Total Football.",
       "Before football took over, she swam for the ACS Primary team and earned her green belt in taekwondo.",
     ],
     groups: [
-      { id: "soccer", num: "3.1", name: "Soccer", icon: "ball", intro: "School team, two academies and private coaching." },
+      { id: "soccer", num: "3.1", name: "Soccer", icon: "ball", intro: "Four ways she trains: the ACS school team, French Football Academy (3F), private coaching and Total Football School (TFS)." },
       { id: "swimming", num: "3.2", name: "Swimming", icon: "waves", intro: "ACS Primary swimming team." },
       { id: "taekwondo", num: "3.3", name: "Taekwondo", icon: "zap", intro: "ACS Primary taekwondo club." },
     ],
@@ -149,23 +158,23 @@ window.ACTIVITIES = [
   {
     id: "grade-6", num: "1.1.3", section: "academics", group: "coursework",
     title: "Grade 6", org: "ACS Jakarta — Primary", period: "2024 – 2025", year: 2024,
-    summary: "Her final year of primary school — Top Student of the grade and a perfect Cambridge Checkpoint.",
+    summary: "Her final year of primary school — a Top Student (top 10%) of the grade and a perfect Cambridge Checkpoint.",
     description: [
-      "Grade 6 was Chasia’s final year of primary school, and her strongest yet. She was named Top Student of the grade (out of more than 70 students), was recognised as the Top Student in Global Perspectives, and finished the year with a perfect score on the Cambridge Primary Checkpoint.",
+      "Grade 6 was Chasia’s final year of primary school, and her strongest yet. She was recognised as a Top Student of the grade — in the top 10% of more than 70 students — was named as the Top Student in Global Perspectives, and finished the year with a perfect score on the Cambridge Primary Checkpoint.",
       "Her Grade 6 report card is available in the gallery below. The awards from this year each have their own page under Awards.",
     ],
-    highlights: ["Top Student of 70+ students", "Top Student — Global Perspectives", "Cambridge Primary Checkpoint: 50/50 in all 3 subjects"],
+    highlights: ["Top Student — top 10% of 70+ students", "Top Student — Global Perspectives", "Cambridge Primary Checkpoint: 50/50 in all 3 subjects"],
     gallery: [],
   },
   {
     id: "grade-5", num: "1.1.4", section: "academics", group: "coursework",
     title: "Grade 5", org: "ACS Jakarta — Primary", period: "2023 – 2024", year: 2023,
-    summary: "The year she was first named Top Student of her grade.",
+    summary: "The year she was first recognised as a Top Student — in the top 10% of her grade.",
     description: [
-      "In Grade 5 Chasia was named Top Student of the grade, out of more than 70 students — a result she would repeat the following year.",
+      "In Grade 5 Chasia was recognised as a Top Student of the grade — in the top 10% of more than 70 students — a result she would repeat the following year.",
       "Her Grade 5 report card is available in the gallery below.",
     ],
-    highlights: ["Top Student of 70+ students"],
+    highlights: ["Top Student — top 10% of 70+ students"],
     gallery: [],
   },
 
@@ -173,7 +182,7 @@ window.ACTIVITIES = [
   {
     id: "cambridge-checkpoint", num: "1.2.1", section: "academics", group: "awards",
     title: "Perfect Score on Cambridge Primary Checkpoint", org: "Cambridge Assessment International Education", period: "2024 – 2025", year: 2024,
-    featured: true, stat: { value: "50/50", label: "on all three subjects" },
+    stat: { value: "50/50", label: "on all three subjects" },
     summary: "A perfect 50 out of 50 in all three subjects, with Gold for Global Perspectives.",
     description: [
       "The Cambridge Primary Checkpoint is an international assessment taken at the end of primary school by students in Cambridge schools around the world. It assesses English, Mathematics and Science, and gives schools and families an external benchmark of how a student compares internationally.",
@@ -238,8 +247,8 @@ window.ACTIVITIES = [
   },
   {
     id: "wsc-2024-global", num: "1.3.2", section: "academics", group: "debate",
-    title: "World Scholar’s Cup — Global Round, Bangkok", org: "World Scholar’s Cup · Junior Division", location: "Bangkok, Thailand", period: "2024 – 2025", year: 2024,
-    featured: true, stat: { value: "1st", label: "Overall Team, Global Round" },
+    title: "World Scholar’s Cup — 2024 Global Round, Bangkok", org: "World Scholar’s Cup · Junior Division", location: "Bangkok, Thailand", period: "2024", year: 2024,
+    stat: { value: "1st", label: "Overall Team, Global Round" },
     summary: "First Place Trophy for Overall Team across all four categories — and a place in the Tournament Final Round at Yale.",
     description: [
       "The Global Rounds bring together the strongest teams from regional rounds around the world. At the Global Round in Bangkok, Chasia and her teammates won the First Place Trophy for Overall Team — the top team result across all four events combined.",
@@ -329,7 +338,7 @@ window.ACTIVITIES = [
   {
     id: "fast-fashion-seminar", num: "1.5.1", section: "academics", group: "fast-fashion",
     title: "Seminar: The Ethics of Fast Fashion", org: "ACS Global Perspectives team", period: "2025", year: 2025,
-    featured: true, stat: { value: "4", label: "steps: seminar → donations → video → recognition" },
+    stat: { value: "4", label: "steps: seminar → donations → video → recognition" },
     summary: "A seminar explaining the hidden costs of cheap, fast-changing clothes — to people and to the planet.",
     description: [
       "Fast fashion is the business of producing trendy clothes very quickly and very cheaply. It makes clothing affordable, but it also creates huge amounts of textile waste, uses large amounts of water and energy, and often relies on low-paid garment workers.",
@@ -378,7 +387,7 @@ window.ACTIVITIES = [
   {
     id: "ac-investment-club", num: "1.6.1", section: "academics", group: "entrepreneurship",
     title: "AC Investment & Entrepreneurship Club", org: "ACS Jakarta · Co-Curricular Activity", period: "2025 – Present", year: 2025,
-    role: "Active member · Applying for Treasury role", featured: true, stat: { value: "6", label: "business & investing projects" },
+    role: "Active member · Applying for Treasury role", stat: { value: "6", label: "business & investing projects" },
     summary: "Business plans, investor debates, case competitions and virtual trading — and applying for the club’s Treasury role.",
     description: [
       "In the Entrepreneurship and AC Investment club, Chasia learns how businesses are planned, funded and run — by actually doing it. She is an active member and is applying for the club’s Treasury role.",
@@ -429,15 +438,14 @@ window.ACTIVITIES = [
     summary: "Planned and organised school events and special activity days with the Student Council.",
     description: [
       "As Head of Events and Projects, Chasia worked with the Primary Student Council Committee to plan and organise school events and special activity days — from the first idea to the day itself.",
-      "It built on her earlier role as a Student Councillor (2023), where she set an example of positive behaviour for younger students and volunteered at school community-service events.",
     ],
-    highlights: ["Planned school events and special activity days", "Worked with the Primary Student Council Committee", "Previously Student Councillor (2023)"],
+    highlights: ["Planned school events and special activity days", "Worked with the Primary Student Council Committee"],
     gallery: [],
   },
   {
     id: "paskibra-conductor", num: "2.1.3", section: "service", group: "school",
     title: "Paskibra: National Songs Conductor", org: "Independence Day Ceremony · ACS Jakarta", period: "2025", year: 2025,
-    featured: true, stat: { value: "700+", label: "audience members" }, badges: ["Paskibra"],
+    stat: { value: "700+", label: "audience members" }, badges: ["Paskibra"],
     summary: "Conducted “Indonesia Raya” for 700+ students, parents and teachers, as part of the Independence Day flag-raising troop.",
     description: [
       "Paskibra (Pasukan Pengibar Bendera) is the flag-raising troop at the heart of every Indonesian Independence Day ceremony on 17 August. Members train for weeks to perform precise, perfectly synchronised marching drills.",
@@ -451,7 +459,7 @@ window.ACTIVITIES = [
   {
     id: "waste-sorting", num: "2.2.1", section: "service", group: "environment",
     title: "Waste Sorting Awareness — “Pentingnya Pemilahan Sampah”", org: "Neighbourhood community", period: "2026 – Present", year: 2026,
-    role: "Organiser", featured: true, stat: { value: "5", label: "streets of neighbours joined" },
+    role: "Organiser", stat: { value: "5", label: "streets of neighbours joined" },
     summary: "Organised a neighbourhood event on why — and how — to sort household waste, joined by neighbours from five streets.",
     description: [
       "When household rubbish is all mixed together, recycling and composting become much harder. Chasia organised a neighbourhood event called “Pentingnya Pemilahan Sampah” — The Importance of Sorting Waste — to show her neighbours how separating organic waste, recyclables and residual waste at home makes a real difference.",
@@ -614,7 +622,7 @@ window.ACTIVITIES = [
   /* ---- 4.1 Painting ---- */
   {
     id: "burning-borneo", num: "4.1", section: "arts", group: "painting",
-    title: "“Burning Borneo”", org: "Acrylic on canvas", period: "Present", year: 2026, featured: true,
+    title: "“Burning Borneo”", org: "Acrylic on canvas", period: "Present", year: 2026,
     summary: "A painting to raise funds and awareness for communities affected by toxic haze from forest fires in Kalimantan.",
     description: [
       "Forest and peatland fires in Kalimantan send thick, toxic haze across the region, harming the health of local communities — especially children and the elderly.",
@@ -739,13 +747,13 @@ window.ACTIVITIES = [
   {
     id: "travel-international", num: "5.1.1", section: "interests", group: "travel",
     title: "Travel — International", org: "Travel & Nature", period: "", year: null,
-    summary: "From the Middle East and Türkiye to Egypt, Australia, Southeast Asia and the United States.",
+    summary: "From Saudi Arabia and Türkiye to Egypt, Australia, Southeast Asia and the United States.",
     description: [
       "Travelling has shown Chasia how differently people live, eat, pray and celebrate — and how much they have in common. It feeds directly into her Global Perspectives work.",
       "Photos from each destination are below.",
     ],
     list: [
-      { title: "Arab region", text: "" }, { title: "Türkiye", text: "" }, { title: "Egypt", text: "" }, { title: "Australia", text: "" },
+      { title: "Saudi Arabia", text: "" }, { title: "Türkiye", text: "" }, { title: "Egypt", text: "" }, { title: "Australia", text: "" },
       { title: "Singapore", text: "" }, { title: "Thailand", text: "" }, { title: "United States — California & Hawaii", text: "" },
     ],
     gallery: [],
