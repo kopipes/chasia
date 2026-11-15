@@ -645,3 +645,14 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .lightbox__stage img, .lightbox__stage video { max-height: calc(100vh - 230px); max-height: calc(100dvh - 230px); max-width: 100%; }
 @media (max-width: 640px) { .lightbox__stage img, .lightbox__stage video { max-height: calc(100dvh - 260px); } }
 .tile img { background: #fff; }
+
+/* mobile/tablet hero: keep the floating badges below the face */
+@media (max-width: 900px) {
+  .float--1 { top: auto; bottom: 37%; left: -6%; }
+  .float--2 { bottom: 17%; right: -6%; }
+  .float--3 { bottom: -5%; left: 2%; }
+}
+@media (max-width: 480px) {
+  .float--1 { left: -3%; }
+  .float--2 { right: -3%; }
+}
