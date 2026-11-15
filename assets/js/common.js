@@ -9,11 +9,29 @@
     palette: '<path d="M12 22a10 10 0 1 1 10-10c0 2.8-2.2 4-4 4h-2a2 2 0 0 0-1.5 3.3A1.6 1.6 0 0 1 12 22Z"/><circle cx="7.5" cy="10.5" r="1.2"/><circle cx="12" cy="7" r="1.2"/><circle cx="16.5" cy="10.5" r="1.2"/>',
     music: '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
     flag: '<path d="M4 22V4"/><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1"/>',
+    book: '<path d="M4 19.5V5a2 2 0 0 1 2-2h14v16H6.5a2.5 2.5 0 0 0 0 5H20"/><path d="M8 7h8M8 11h6"/>',
+    pen: '<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/>',
+    leaf: '<path d="M11 20A7 7 0 0 1 4 13c0-6 6-9 16-10-1 10-4 16-10 16"/><path d="M4 21c3-5 6-8 11-11"/>',
+    users: '<circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M16 4a4 4 0 0 1 0 8M22 21a7 7 0 0 0-4.5-6.5"/>',
+    moon: '<path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/><path d="m17 3 .7 1.6L19.3 5l-1.6.7L17 7.3l-.7-1.6L14.7 5l1.6-.4Z"/>',
+    waves: '<path d="M2 7c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2"/><path d="M2 13c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2"/><path d="M2 19c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2"/>',
+    zap: '<path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/>',
+    brush: '<path d="M18.4 2.6a2 2 0 0 1 2.9 2.9L12 15l-3-3Z"/><path d="M9 12c-2 0-4 1.5-4 4 0 1.5-1 3-3 3 1.5 1.5 3.5 2 5 2 3 0 5-2 5-5"/>',
+    cup: '<path d="M4 8h13v6a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6Z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 2c0 1.5 1 1.5 1 3M12 2c0 1.5 1 1.5 1 3"/>',
+    flower: '<circle cx="12" cy="12" r="2.5"/><path d="M12 9.5C12 6 13.5 3 12 3s0 3-0 6.5M12 14.5c0 3.5 1.5 6.5 0 6.5s0-3 0-6.5M9.5 12C6 12 3 10.5 3 12s3 0 6.5 0M14.5 12c3.5 0 6.5-1.5 6.5 0s-3 0-6.5 0"/><path d="M14 10c2.5-2.5 3.5-5.5 4.5-4.5S16.5 8 14 10M10 14c-2.5 2.5-3.5 5.5-4.5 4.5S7.5 16 10 14M10 10C7.5 7.5 4.5 6.5 5.5 5.5S8 7.5 10 10M14 14c2.5 2.5 5.5 3.5 4.5 4.5S16 16.5 14 14"/>',
+    compass: '<circle cx="12" cy="12" r="10"/><path d="m16.2 7.8-2.1 6.3-6.3 2.1 2.1-6.3Z"/>',
+    globe: '<circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/>',
+    utensils: '<path d="M3 2v7a3 3 0 0 0 3 3v10M9 2v7a3 3 0 0 1-3 3M6 2v5"/><path d="M21 15V2a5 5 0 0 0-5 5v6a2 2 0 0 0 2 2h3Zm0 0v7"/>',
+    ticket: '<path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2a3 3 0 0 0 0 6v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a3 3 0 0 0 0-6Z"/><path d="M13 5v2M13 11v2M13 17v2"/>',
+    link: '<path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/>',
+    external: '<path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>',
+    info: '<circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/>',
     arrow: '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>',
     arrowLeft: '<path d="M19 12H5"/><path d="m11 18-6-6 6-6"/>',
     arrowUpRight: '<path d="M7 17 17 7"/><path d="M8 7h9v9"/>',
     chevL: '<path d="m15 18-6-6 6-6"/>',
     chevR: '<path d="m9 18 6-6-6-6"/>',
+    chevD: '<path d="m6 9 6 6 6-6"/>',
     close: '<path d="M18 6 6 18M6 6l12 12"/>',
     menu: '<path d="M4 7h16M4 12h16M4 17h10"/>',
     search: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
@@ -30,6 +48,7 @@
     sparkle: '<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/>',
     share: '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/>',
     up: '<path d="m18 15-6-6-6 6"/>',
+    hash: '<path d="M4 9h16M4 15h16M10 3 8 21M16 3l-2 18"/>',
   };
 
   const icon = (name, cls = "") =>
@@ -38,29 +57,30 @@
   const esc = (s = "") =>
     String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-  const catById = (id) => window.CATEGORIES.find((c) => c.id === id);
+  const sectionById = (id) => window.SECTIONS.find((s) => s.id === id);
+  const groupOf = (a) => sectionById(a.section).groups.find((g) => g.id === a.group);
+  const groupById = (sid, gid) => sectionById(sid).groups.find((g) => g.id === gid);
   const activityUrl = (a) => `activity.html?id=${encodeURIComponent(a.id)}`;
-  const areaUrl = (catId) => `index.html?area=${encodeURIComponent(catId)}#achievements`;
+  const sectionUrl = (sid, gid) => `section.html?s=${encodeURIComponent(sid)}${gid ? "#" + encodeURIComponent(gid) : ""}`;
+  const itemsOf = (sid, gid) => window.ACTIVITIES.filter((a) => a.section === sid && (!gid || a.group === gid));
+  const gname = (g) => g.short || g.name;
 
   /* Decorative cover art when no photo exists — a gradient + big icon */
   function coverArt(a, extraCls = "") {
-    const c = catById(a.cat);
-    if (a.cover) {
-      return `<div class="cover ${extraCls}" style="--c1:${c.c1};--c2:${c.c2}"><img src="${esc(a.cover)}" alt="" loading="lazy"></div>`;
-    }
-    return `<div class="cover cover--art ${extraCls}" style="--c1:${c.c1};--c2:${c.c2}">
-      <span class="cover__icon">${icon(c.icon)}</span>
-      <span class="cover__grain"></span>
+    const s = sectionById(a.section), g = groupOf(a);
+    if (a.cover) return `<div class="cover ${extraCls}" style="--c1:${s.c1};--c2:${s.c2}"><img src="${esc(a.cover)}" alt="" loading="lazy"></div>`;
+    return `<div class="cover cover--art ${extraCls}" style="--c1:${s.c1};--c2:${s.c2}">
+      <span class="cover__icon">${icon(g.icon)}</span><span class="cover__grain"></span>
     </div>`;
   }
 
   function activityCard(a, opts = {}) {
-    const c = catById(a.cat);
-    const badge = (a.badges && a.badges[0]) ? `<span class="card__badge">${icon("award")}${esc(a.badges[0])}</span>` : "";
-    return `<a class="card reveal" href="${activityUrl(a)}" data-cat="${a.cat}" style="--c1:${c.c1};--c2:${c.c2}">
+    const s = sectionById(a.section), g = groupOf(a);
+    const badge = a.badges && a.badges[0] ? `<span class="card__badge">${icon("award")}${esc(a.badges[0])}</span>` : "";
+    return `<a class="card reveal" href="${activityUrl(a)}" style="--c1:${s.c1};--c2:${s.c2}">
       <div class="card__media">${coverArt(a)}${badge}</div>
       <div class="card__body">
-        <div class="card__meta"><span class="chip chip--cat">${icon(c.icon)}${esc(c.short)}</span><span class="card__period">${esc(a.period)}</span></div>
+        <div class="card__meta"><span class="chip chip--cat">${icon(g.icon)}${esc(opts.showSection ? s.short : gname(g))}</span><span class="card__period">${esc(a.period || "")}</span></div>
         <h3 class="card__title">${esc(a.title)}</h3>
         ${opts.noSummary ? "" : `<p class="card__summary">${esc(a.summary)}</p>`}
         <span class="card__cta">View details ${icon("arrow")}</span>
@@ -72,63 +92,61 @@
   function renderHeader(active) {
     const el = document.getElementById("site-header");
     if (!el) return;
-    const onHome = active === "home";
-    const href = (hash) => (onHome ? hash : "index.html" + hash);
-    const links = [
-      ["About", href("#about")],
-      ["Achievements", href("#achievements")],
-      ["Journey", href("#journey")],
-      ["Contact", href("#contact")],
-    ];
-    const areas = window.CATEGORIES.map(
-      (c) => `<a class="mega__item" href="${onHome ? "#achievements" : areaUrl(c.id)}" data-area="${c.id}" style="--c1:${c.c1};--c2:${c.c2}">
-        <span class="mega__icon">${icon(c.icon)}</span>
-        <span><strong>${esc(c.name)}</strong><small>${window.ACTIVITIES.filter((a) => a.cat === c.id).length} activities</small></span>
-      </a>`
-    ).join("");
+    const home = active === "home";
+    const sections = window.SECTIONS.map((s) => {
+      const groups = s.groups.map((g) => `<a class="mega__item" href="${sectionUrl(s.id, g.id)}" style="--c1:${s.c1};--c2:${s.c2}">
+          <span class="mega__icon">${icon(g.icon)}</span>
+          <span><strong>${esc(gname(g))}</strong><small>${itemsOf(s.id, g.id).length} ${itemsOf(s.id, g.id).length === 1 ? "page" : "pages"}</small></span>
+        </a>`).join("");
+      return `<div class="nav__drop${active === s.id ? " is-current" : ""}">
+          <a class="nav__link" href="${sectionUrl(s.id)}">${esc(s.short)}</a>
+          <button class="nav__caret" aria-expanded="false" aria-label="Show ${esc(s.name)} sub-pages">${icon("chevD")}</button>
+          <div class="mega"><a class="mega__head" href="${sectionUrl(s.id)}" style="--c1:${s.c1};--c2:${s.c2}"><span class="mega__icon">${icon(s.icon)}</span><span><strong>${esc(s.name)}</strong><small>${esc(s.tagline)}</small></span>${icon("arrow")}</a><div class="mega__grid">${groups}</div></div>
+        </div>`;
+    }).join("");
+    const drawerSections = window.SECTIONS.map((s, i) => `<details class="dsec" style="--c1:${s.c1};--c2:${s.c2};--d:${i}">
+        <summary><span class="mega__icon">${icon(s.icon)}</span><span>${esc(s.name)}</span>${icon("chevD", "dsec__chev")}</summary>
+        <div class="dsec__list">
+          <a href="${sectionUrl(s.id)}"><strong>All of ${esc(s.short)}</strong>${icon("arrow")}</a>
+          ${s.groups.map((g) => `<a href="${sectionUrl(s.id, g.id)}">${icon(g.icon)}${esc(gname(g))}</a>`).join("")}
+        </div>
+      </details>`).join("");
 
     el.innerHTML = `
       <div class="header__inner container">
         <a class="brand" href="index.html" aria-label="${esc(window.SITE.name)} — home">
           <span class="brand__mark">C</span><span class="brand__word">${esc(window.SITE.firstName)}<i>.</i></span>
         </a>
-        <nav class="nav" aria-label="Main">
-          <a href="${links[0][1]}">${links[0][0]}</a>
-          <div class="nav__drop">
-            <button class="nav__dropbtn" aria-expanded="false" aria-controls="mega">Areas ${icon("chevR", "rot90")}</button>
-            <div class="mega" id="mega"><div class="mega__grid">${areas}</div></div>
-          </div>
-          ${links.slice(1).map(([t, h]) => `<a href="${h}">${t}</a>`).join("")}
-        </nav>
-        <a class="btn btn--sm btn--ink header__cta" href="${links[1][1]}">Explore ${icon("arrow")}</a>
+        <nav class="nav" aria-label="Main">${sections}</nav>
+        <a class="btn btn--sm btn--ink header__cta" href="${home ? "#contact" : "index.html#contact"}">Contact ${icon("arrow")}</a>
         <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">${icon("menu")}</button>
       </div>
       <div class="drawer" id="drawer" hidden>
         <div class="drawer__inner container">
-          <nav class="drawer__links" aria-label="Mobile">
-            ${links.map(([t, h], i) => `<a href="${h}" style="--d:${i}">${t}</a>`).join("")}
-          </nav>
-          <p class="drawer__label">Browse by area</p>
-          <div class="drawer__areas">${areas}</div>
+          <a class="drawer__home" href="index.html">Home</a>
+          <div class="drawer__secs">${drawerSections}</div>
+          <a class="btn btn--ink drawer__contact" href="${home ? "#contact" : "index.html#contact"}">${icon("mail")} Contact</a>
         </div>
       </div>`;
 
-    const header = el;
-    const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 12);
+    const onScroll = () => el.classList.toggle("is-scrolled", window.scrollY > 12);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
 
-    // Mega menu
-    const drop = el.querySelector(".nav__drop");
-    const dropBtn = el.querySelector(".nav__dropbtn");
-    const setDrop = (open) => { drop.classList.toggle("is-open", open); dropBtn.setAttribute("aria-expanded", open); };
-    dropBtn.addEventListener("click", (e) => { e.stopPropagation(); setDrop(!drop.classList.contains("is-open")); });
-    document.addEventListener("click", (e) => { if (!drop.contains(e.target)) setDrop(false); });
-    document.addEventListener("keydown", (e) => { if (e.key === "Escape") setDrop(false); });
+    // dropdowns: open on hover (desktop) and via the caret button (keyboard / touch)
+    const drops = [...el.querySelectorAll(".nav__drop")];
+    const closeAll = (except) => drops.forEach((d) => { if (d !== except) { d.classList.remove("is-open"); d.querySelector(".nav__caret").setAttribute("aria-expanded", "false"); } });
+    drops.forEach((d) => {
+      const b = d.querySelector(".nav__caret");
+      b.addEventListener("click", (e) => { e.stopPropagation(); const open = !d.classList.contains("is-open"); closeAll(d); d.classList.toggle("is-open", open); b.setAttribute("aria-expanded", open); });
+      d.addEventListener("mouseenter", () => { if (matchMedia("(hover: hover)").matches) { closeAll(d); d.classList.add("is-open"); } });
+      d.addEventListener("mouseleave", () => { if (matchMedia("(hover: hover)").matches) d.classList.remove("is-open"); });
+    });
+    document.addEventListener("click", (e) => { if (!e.target.closest(".nav__drop")) closeAll(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeAll(); });
 
-    // Mobile drawer
-    const burger = el.querySelector(".burger");
-    const drawer = el.querySelector(".drawer");
+    // mobile drawer
+    const burger = el.querySelector(".burger"), drawer = el.querySelector(".drawer");
     const setDrawer = (open) => {
       burger.setAttribute("aria-expanded", open);
       burger.innerHTML = icon(open ? "close" : "menu");
@@ -140,13 +158,6 @@
     burger.addEventListener("click", () => setDrawer(burger.getAttribute("aria-expanded") !== "true"));
     drawer.addEventListener("click", (e) => { if (e.target.closest("a")) setDrawer(false); });
     document.addEventListener("keydown", (e) => { if (e.key === "Escape" && burger.getAttribute("aria-expanded") === "true") setDrawer(false); });
-
-    // Area links on the home page filter in place
-    if (onHome) {
-      el.querySelectorAll("[data-area]").forEach((a) =>
-        a.addEventListener("click", () => { setDrop(false); window.dispatchEvent(new CustomEvent("area:select", { detail: a.dataset.area })); })
-      );
-    }
   }
 
   /* ---------- Footer ---------- */
@@ -160,22 +171,13 @@
           <a class="brand brand--light" href="index.html"><span class="brand__mark">C</span><span class="brand__word">${esc(S.firstName)}<i>.</i></span></a>
           <p>${esc(S.tagline)}</p>
         </div>
-        <div class="footer__col">
-          <h4>Areas</h4>
-          <ul>${window.CATEGORIES.map((c) => `<li><a href="${areaUrl(c.id)}">${esc(c.name)}</a></li>`).join("")}</ul>
-        </div>
-        <div class="footer__col">
-          <h4>Site</h4>
-          <ul>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#achievements">Achievements</a></li>
-            <li><a href="index.html#journey">Journey</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-          </ul>
-        </div>
+        ${window.SECTIONS.map((s) => `<div class="footer__col">
+          <h4><a href="${sectionUrl(s.id)}">${esc(s.name)}</a></h4>
+          <ul>${s.groups.map((g) => `<li><a href="${sectionUrl(s.id, g.id)}">${esc(gname(g))}</a></li>`).join("")}</ul>
+        </div>`).join("")}
       </div>
       <div class="container footer__bottom">
-        <span>© ${new Date().getFullYear()} ${esc(S.name)}</span>
+        <span>© ${new Date().getFullYear()} ${esc(S.name)} · <a href="index.html#contact">Contact</a></span>
         <button class="totop" type="button">Back to top ${icon("up")}</button>
       </div>`;
     el.querySelector(".totop").addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
@@ -196,5 +198,5 @@
     els.forEach((e, i) => { e.style.setProperty("--stagger", (i % 6) * 60 + "ms"); io.observe(e); });
   }
 
-  window.UI = { icon, esc, catById, activityUrl, areaUrl, coverArt, activityCard, renderHeader, renderFooter, reveal };
+  window.UI = { icon, esc, sectionById, groupOf, groupById, activityUrl, sectionUrl, itemsOf, gname, coverArt, activityCard, renderHeader, renderFooter, reveal };
 })();

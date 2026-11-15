@@ -4,8 +4,11 @@ Live site: https://chasia.my.id/
 
 A static website (plain HTML/CSS/JS, no build step) showing Chasia Pulungan’s achievements and activities.
 
-- `index.html`: home page with hero, highlights, areas, a searchable and filterable achievements grid, a year-by-year journey, and contact
-- `activity.html?id=<activity-id>`: one detail page per activity, with the story, highlights, an "at a glance" card, and a photo/video gallery with a full-screen viewer
+Structure follows `Sitemap_Chasia_Profile_Website.xlsx` (see `docs/CONTENT_AUDIT.md`):
+
+- `index.html`: home page with welcome message, optional reel video, the 5 sections, highlights, a searchable list of all pages, year-by-year journey, and contact
+- `section.html?s=<section>`: one page per main section (Academics, Service, Athletics, Arts & Music, Interests), with intro text and the sub-sections (e.g. `section.html?s=academics#debate`)
+- `activity.html?id=<page-id>`: one page per item in the sitemap, with the story, highlights, links, and a photo/video gallery with a full-screen viewer
 
 ## Editing content
 
@@ -29,6 +32,12 @@ Tip: resize photos to about 2000px on the longest side (JPG/WebP) so pages load 
 
 ### Portrait
 Save a photo as `assets/img/portrait.jpg` and set `portrait: "assets/img/portrait.jpg"` in `SITE`.
+
+### External links and lists
+Add `links: [{ label, url }]` for Instagram/YouTube/document links, and `list: [{ title, text }]` for destinations, classes or books. Set `needsInfo: true` to show a “more details coming soon” note.
+
+### Reel video on the home page
+Set `reel: "assets/media/reel/chasia-reel.mp4"` or `reelYoutube: "VIDEO_ID"` in `SITE`.
 
 ### Featured highlights
 Set `featured: true` (and optionally `stat: { value, label }`) on an activity to show it in the “Highlights” section. The layout is designed for six featured items.
