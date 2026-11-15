@@ -197,3 +197,18 @@ Pages that would also benefit from one or two more facts (date, place or result)
 ## 7. How to add the uploaded files
 
 For each page, put the files in `assets/media/<page-id>/` and list them in that page's `gallery` in `assets/js/data.js`. The page IDs are in `data.js`, for example `cambridge-checkpoint`, `wsc-2024-global`, `vice-captain`. Large videos are better uploaded to YouTube and added as `{ type: "youtube", id: "…" }`.
+
+---
+
+## 8. Photos imported from Google Drive (15 Nov 2026)
+
+- Source: the shared “Chasia Profile Website” Drive folder (folders 01–05 follow the sitemap).
+- **198 images on 34 pages.** Photos are resized to max 1600 px (viewer) and 640 px (thumbnails), as JPEG. Total size is about 59 MB, and no single file is over 600 KB.
+- **PDFs** (report cards, certificates, letters, writing samples) are shown as page images in the gallery, up to 6 pages per file.
+- **Videos (.MOV/.mp4) are not imported yet.** They will go on YouTube later (decision 17).
+- The generated list is in `assets/js/media.js`. The first photo of each page becomes its card and header image.
+- **Not placed (unclear which page):**
+  - `03 Debate / Chasia Debate 03.HEIC` (loose in the Debate folder)
+  - `06 Entrepreneurship & Investment / PHOTO-2026-11-11-08-11-42.jpg` (club or fintech camp?)
+- The WSC qualification letter (11 Sept 2024) refers to the Global Round in 2024 and the Tournament of Champions at Yale in November 2024. This confirms decision 2.
+- Some documents and photos show other students' names and faces (WSC team letter, team photos). Decision 14 says to get their families' permission.

@@ -640,3 +640,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 /* highlight cards: keep the corner icon clear of the text */
 .feat { padding-top: 96px; }
 .feat__stat { font-size: clamp(52px, 6vw, 84px); }
+
+/* viewer: always fit tall document pages inside the stage */
+.lightbox__stage img, .lightbox__stage video { max-height: calc(100vh - 230px); max-height: calc(100dvh - 230px); max-width: 100%; }
+@media (max-width: 640px) { .lightbox__stage img, .lightbox__stage video { max-height: calc(100dvh - 260px); } }
+.tile img { background: #fff; }
