@@ -25,12 +25,12 @@ Branch: `claude/sitemap-v2`
 | 11 | Home highlights: **Top Student · Debate Champion · Environment Advocate (Fast Fashion) · Soccer Player · Art Works (Painting & Pottery) · Traveller** | `SITE.highlights` in `data.js` |
 | 12 | Report cards shown **in full**. The website address is shared only with admission committees | All pages have `noindex, nofollow` so search engines don't list the site |
 | 13 | Certificates: **no blurring** | — |
-| 14 | Other children in photos: **ask their families' permission** | To do when adding photos |
-| 15 | Contact: **parent's email**, *to be confirmed* | Not changed yet. Waiting for the address |
-| 16 | Home video: **the 60-second motion-graphic video** | Waiting for the YouTube ID. Set `SITE.reelYoutube` |
+| 14 | Other children in photos: **ask their families' permission** → updated 15 Nov: **not needed** | Photos used as they are |
+| 15 | Contact: **parent's email** — psoeroso@gmail.com | Contact section on the home page |
+| 16 | Home video: **the 60-second motion-graphic video** | YouTube ID to follow. Set `SITE.reelYoutube` |
 | 17 | Videos stored on **YouTube** | Galleries support `{ type: "youtube", id }` |
 | 18 | Paskibra video uses an **instrumental** version | To do when the video is made |
-| 19 | Portrait photo: **will be provided** | Waiting. Set `SITE.portrait` |
+| 19 | Portrait photo: **will be provided** (not chosen yet) | Temporary: official school photo in `assets/img/portrait.jpg` |
 | 20 | Instagram as **links** | Unchanged |
 | 21 | Launch the sitemap version **now**, content follows | Merged to `main` |
 
@@ -212,4 +212,4 @@ For each page, put the files in `assets/media/<page-id>/` and list them in that 
 - **Portrait (temporary):** the official school photo from the Vice Captain folder (`assets/img/portrait.jpg`). Replace it when the chosen portrait is ready (decision 19).
 - **Facts confirmed by the documents and added to the pages:** Cambridge Checkpoint, May 2025, “Outstanding (50/50)” in English, Mathematics and Science. Head of Events and Projects Feb – Dec 2024. School Vice-Captain Aug – Dec 2024. Grade 5 Top Student award given at the Primary Academic Awards Presentation, 27 Aug 2024. Vice School Captain message published in the primary yearbook.
 - The WSC qualification letter (11 Sept 2024) refers to the Global Round in 2024 and the Tournament of Champions at Yale in November 2024. This confirms decision 2.
-- Some documents and photos show other students' names and faces (WSC team letter, team photos). Decision 14 says to get their families' permission.
+- Some documents and photos show other students' names and faces (WSC team letter, team photos). Per the 15 Nov update to decision 14, no extra permission is needed.

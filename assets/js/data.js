@@ -47,7 +47,7 @@ window.SITE = {
     { title: "Art Works — Painting & Pottery", label: "Arts & Music", stat: "", statLabel: "", section: "arts", icon: "palette", href: "section.html?s=arts#painting" },
     { title: "Traveller", label: "Interests · Travel & Nature", stat: "7", statLabel: "countries abroad, and across Indonesia", section: "interests", icon: "globe", href: "section.html?s=interests#travel" },
   ],
-  email: "chasia.pulungan@gmail.com",
+  email: "psoeroso@gmail.com",
   location: "Jakarta, Indonesia",
   school: "ACS Jakarta",
 };
