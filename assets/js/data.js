@@ -647,9 +647,9 @@ window.ACTIVITIES = [
     title: "Painting — Collection from the Past", org: "Acrylic on canvas", period: "2024 – 2025", year: 2024,
     summary: "Landscapes, still life, pop art pet portraits, sunset seascapes and flowers.",
     description: [
-      "Before her recent pieces, Chasia explored a wide range of subjects and styles in acrylic: landscapes, a still life of oranges, colourful pop-art portraits of pets, sunset seascapes and floral still life.",
+      "Before her recent pieces, Chasia explored a wide range of subjects and styles in acrylic: landscapes — including a waterfall framed by cherry blossoms — a still life of oranges, colourful pop-art portraits of pets, sunset seascapes and floral still life.",
     ],
-    highlights: ["Landscapes", "Oranges still life", "Pop art pet portraits", "Sunset seascapes", "Floral still life"],
+    highlights: ["Landscapes — cherry blossom waterfall", "Oranges still life", "Pop art pet portraits", "Sunset seascapes", "Floral still life"],
     gallery: [],
   },
 
