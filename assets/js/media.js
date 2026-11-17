@@ -803,6 +803,11 @@ window.MEDIA = {
    "src": "assets/media/painting-collection/04.jpg",
    "thumb": "assets/media/painting-collection/04-t.jpg",
    "caption": "Sunset seascape"
+  },
+  {
+   "src": "assets/media/painting-collection/05.jpg",
+   "thumb": "assets/media/painting-collection/05-t.jpg",
+   "caption": "Cherry blossom waterfall"
   }
  ],
  "teapot-cups": [
